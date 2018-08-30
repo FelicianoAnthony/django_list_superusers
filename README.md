@@ -1,3 +1,19 @@
+### Create virtual environment
+virtualenv venv 
+source venv/bin/activate
+
+
+### Download pip dependencies 
+pip install -r requirements.txt
+
+
+### set up DB
+./manage.py makemigrations users 
+./manage.py migrate users
+./manage.py migrate
+
+
+
 ### List all superusers 
 http://127.0.0.1:8000/api/v1/users/
 
